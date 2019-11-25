@@ -14,11 +14,11 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
     "&:hover": {
-      backgroundColor: "rgba(0,0,255, 0.2)",
+      backgroundColor: "rgba(255,255,255, 0.1)",
     }
   },
   activeLink: {
-    backgroundColor: "rgba(0,0,255, 0.2)",
+    backgroundColor: "rgba(255,255,255, 0.1)",
   },
 }));
 

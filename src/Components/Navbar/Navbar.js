@@ -18,12 +18,19 @@ const ITEMS = [
 const useStyles = makeStyles(theme => ({
   root: {
     height: "8vh",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    zIndex: 10,
+    width: "100%",
   },
   appbar: {
     height: "100%",
+    backgroundColor: "rgba(0,0,0,0.2)"
   },
   toolbar: {
     height: "100%",
+    backgroundColor: "rgba(0,0,0,0.2)"
   }
 }));
 
@@ -31,7 +38,7 @@ export default () => {
   const classes = useStyles();
   return (
     <header className={classes.root}>
-      <AppBar className={classes.appbar} color="primary" position="static">
+      <AppBar className={classes.appbar} position="static">
         <Toolbar className={classes.toolbar} >
           <Logo />
           <NavItems items={ITEMS} />

@@ -1,5 +1,4 @@
 import React from 'react';
-import uuid from 'uuid/v4';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -8,11 +7,11 @@ import Logo from './Logo/Logo';
 import NavItems from './NavItems/NavItems'
 
 const ITEMS = [
-  { id: uuid(), title: "home", path: "/" },
-  { id: uuid(), title: "who are we?", path: "/infos" },
-  { id: uuid(), title: "our products", path: "/products" },
-  { id: uuid(), title: "our services", path: "/services" },
-  { id: uuid(), title: "contact us", path: "/contact" },
+  { id: "home", title: "home", path: "/" },
+  { id: "presentation", title: "presentation", path: "/presentation" },
+  { id: "produits", title: "nos produits", path: "/produits" },
+  { id: "services", title: "nos services", path: "/services" },
+  { id: "contact", title: "nous contacter", path: "/contact" },
 ];
 
 const useStyles = makeStyles(theme => ({
@@ -35,6 +34,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default () => {
+  // React.useEffect(() => console.log("> NAVABR: rendered"));
+
   const classes = useStyles();
   return (
     <header className={classes.root}>

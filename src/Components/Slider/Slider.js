@@ -28,8 +28,7 @@ const useStyle = makeStyles(theme => ({
   )
 }));
 
-
-const Slider = () => {
+const Slider = ({id}) => {
   const slideWidth = () => {
     return document.querySelector("#slide").clientWidth;
   }
@@ -57,14 +56,14 @@ const Slider = () => {
 
   const classes = useStyle({ translateValue: translateValue });
   return (
-    <>
+    <div id={id}>
       <Paper className={classes.background} square>
         <div className={classes.slideWrapper}>
           {IMAGES.map((img, i) => <Slide key={i} img={img} />)}
         </div>
       </Paper>
       <Text />
-    </>
+    </div>
   );
 }
 

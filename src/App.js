@@ -1,32 +1,26 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { Suspense, lazy } from 'react';
 import CssBaseLine from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
 
 import Navbar from './Components/Navbar/Navbar';
-import Slider from './Components/Slider/Slider';
+// import Landing from './pages/Landing'
+// import Presentation from './pages/Presentation';
 
-const useStyle = makeStyles(theme => ({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%"
-  }
-}));
+const Landing = lazy(() => import('./pages/Landing'));
+const Presentation = lazy(() => import('./pages/Presentation'));
 
 function App() {
-  const classes = useStyle();
-
+  
   return (
-    <>
+    <Suspense fallback={<h1>Loading....</h1>}>
       <CssBaseLine />
       <Navbar />
-      <Slider>
-        <Container className={classes.container} />
-      </Slider>
-    </>
+      {/* <Swtich> */}
+      {/* <Route path="/" render={routerProps => <Landing {...routerProps} />} /> */}
+      {/* <Route path="/presentation" render={routerProps => <Presentation {...routerProps} />} /> */}
+      <Landing id="home" />
+      <Presentation id="presentation" />
+      {/* </Swtich> */}
+    </Suspense>
   );
 }
 

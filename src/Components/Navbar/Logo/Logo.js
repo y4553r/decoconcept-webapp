@@ -12,6 +12,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default () => {
+  // React.useEffect(() => console.log("> LOGO: rendered"));
+
   const classes = useStyles();
   return (
     <TypoGraphy variant="h6" className={classes.icon}>

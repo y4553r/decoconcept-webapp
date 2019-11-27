@@ -12,6 +12,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default ({ items }) => {
+  // React.useEffect(() => console.log("> NAVITEMS: rendered"));
+
   const classes = useStyles();
   return (
     <div className={classes.links}>

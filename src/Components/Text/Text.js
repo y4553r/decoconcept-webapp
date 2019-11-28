@@ -4,19 +4,19 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyle = makeStyles(theme => ({
   card: ({ show }) => ({
-    width: "50%",
+    width: "60%",
     opacity: show ? 1 : 0,
     transition: "all 1s",
   }),
   textContainer: {
-    borderRadius: "10px",
+    borderRadius: "18px",
     textAlign: "justify",
     padding: "20px",
-    width: "80%",
+    width: "90%",
     height: "65%",
     backgroundColor: "rgba(255,255,255,0.6)",
     boxShadow: "0 0 50px #aaa",
-    marginTop: "13%"
+    marginTop: "10%"
   }
 }));
 

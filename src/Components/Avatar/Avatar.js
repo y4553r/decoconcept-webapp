@@ -5,13 +5,14 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyle = makeStyles(theme => ({
   card: ({ show }) => ({
-    width: "50%",
+    width: "40%",
     opacity: show ? 1 : 0,
     transition: "all 1s",
   }),
   bigAvatar: {
-    marginLeft: theme.spacing(28),
-    marginTop: theme.spacing(10),
+    marginLeft: theme.spacing(20),
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(5),
     height: theme.spacing(45),
     width: theme.spacing(45),
     boxShadow: "0 0 0 10px hsl(0, 0%, 50%),0 0 0 15px hsl(0, 0%, 60%),0 0 0 20px hsl(0, 0%, 70%),0 0 0 25px hsl(0, 0%, 80%),0 0 0 30px hsl(0, 0%, 90%)",

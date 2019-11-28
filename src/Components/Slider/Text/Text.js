@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TypoGraphy from '@material-ui/core/Typography';
-import { Link } from 'react-scroll';
 
 import Down from '../../Arrows/down';
 
@@ -14,9 +13,8 @@ const useStyle = makeStyles(() => ({
   },
   arrow: {
     position: "absolute",
-    top: "95%",
+    top: "93%",
     left: "49%",
-    cursor: "pointer"
   }
 }));
 
@@ -31,13 +29,11 @@ export default memo(() => {
         <TypoGraphy variant="h5" align="center">
           BenDriss DecoConcept Corporatation
         </TypoGraphy>
-        
+
       </div>
-        <TypoGraphy variant="h4" className={classes.arrow}>
-          <Link to="presentation" spy smooth offset={0} duration={500}>
-            <Down color="white" />
-          </Link>
-        </TypoGraphy>
+      <div className={classes.arrow}>
+        <Down to="presentation" color="white" />
+      </div>
     </div>
   );
 })

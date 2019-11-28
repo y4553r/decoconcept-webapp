@@ -10,7 +10,7 @@ const useStyle = makeStyles(theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "100%"
+    height: "100%",
   }
 }));
 
@@ -18,8 +18,10 @@ export default ({id}) => {
   const classes = useStyle();
 
   return (
-    <Slider id={id}>
-      <Container className={classes.container} />
-    </Slider>
+    <section>
+      <Slider id={id}>
+        <Container className={classes.container} />
+      </Slider>
+    </section>
   );
 }

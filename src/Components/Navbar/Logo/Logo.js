@@ -2,12 +2,18 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TypoGraphy from '@material-ui/core/Typography';
 
+import logo from '../../../assets/img/image2vector.svg';
+
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(5),
     height: "100%",
     display: "flex",
     alignItems: "center"
+  },
+  img: {
+    width: "8vh",
+    backgroundColor: "white",
   }
 }));
 
@@ -17,7 +23,8 @@ export default () => {
   const classes = useStyles();
   return (
     <TypoGraphy variant="h6" className={classes.icon}>
-      BenDriss DecoConcept
+      {/* BenDriss DecoConcept */}
+      <img src={logo} alt="logo" className={classes.img} />
     </TypoGraphy>
   )
 };

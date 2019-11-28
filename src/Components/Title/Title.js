@@ -7,7 +7,7 @@ const useStyle = makeStyles(theme => ({
     textAlign: "center",
     textTransform: "uppercase",
     letterSpacing: ".15em",
-    paddingTop: theme.spacing(3),
+    paddingTop: theme.spacing(1),
     textRendering: "optimizeLegibility",
     color: "#2c2c2c",
     textShadow: "4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2)",

@@ -7,16 +7,16 @@ const useStyle = makeStyles(theme => ({
     width: "60%",
     opacity: show ? 1 : 0,
     transition: "all 1s",
+    display: "inline-block",
   }),
   textContainer: {
     borderRadius: "18px",
     textAlign: "justify",
     padding: "20px",
     width: "90%",
-    height: "65%",
     backgroundColor: "rgba(255,255,255,0.6)",
     boxShadow: "0 0 50px #aaa",
-    marginTop: "10%"
+    // marginTop: "10%"
   }
 }));
 

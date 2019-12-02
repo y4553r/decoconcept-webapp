@@ -1,11 +1,15 @@
 body {
   margin: 0;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 html {
   scroll-snap-type: y mandatory;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
-section {
+.scroll_child {
   scroll-snap-align: start;
 }

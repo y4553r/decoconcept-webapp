@@ -14,14 +14,16 @@ const useStyle = makeStyles(theme => ({
   }
 }));
 
-export default ({id}) => {
+export default ({ id }) => {
   const classes = useStyle();
 
   return (
-    <section>
-      <Slider id={id}>
-        <Container className={classes.container} />
-      </Slider>
-    </section>
+    <div className="scroll_child">
+      <div id="home">
+        <Slider>
+          <Container className={classes.container} />
+        </Slider>
+      </div>
+    </div>
   );
 }

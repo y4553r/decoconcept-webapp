@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TypoGraphy from '@material-ui/core/Typography';
 
-import logo from '../../../assets/img/image2vector.svg';
+import logo from '../../../assets/img/logo.PNG';
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -12,8 +12,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center"
   },
   img: {
-    width: "8vh",
-    backgroundColor: "white",
+    width: "19vh",
   }
 }));
 

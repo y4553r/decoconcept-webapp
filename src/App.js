@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, Component } from 'react';
+import React, { Suspense, lazy } from 'react';
 import CssBaseLine from '@material-ui/core/CssBaseline';
 
 import './App.css';

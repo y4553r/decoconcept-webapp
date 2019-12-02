@@ -21,6 +21,7 @@ const useStyle = makeStyles(theme => ({
 
 export default memo(({ color, to }) => {
   const classes = useStyle();
+
   return (
     <Link to={to} spy smooth offset={0} duration={500}>
       <Typography className={classes.arrow} variant="h4">

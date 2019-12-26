@@ -18,7 +18,7 @@ const useStyle = makeStyles(theme => ({
     margin: "auto",
     height: theme.spacing(30),
     width: theme.spacing(30),
-    boxShadow: "0 0 0 10px hsl(0, 0%, 50%),0 0 0 15px hsl(0, 0%, 60%),0 0 0 20px hsl(0, 0%, 70%),0 0 0 25px hsl(0, 0%, 80%),0 0 0 30px hsl(0, 0%, 90%)",
+    //boxShadow: "0 0 0 10px hsl(0, 0%, 50%),0 0 0 15px hsl(0, 0%, 60%),0 0 0 20px hsl(0, 0%, 70%),0 0 0 25px hsl(0, 0%, 80%),0 0 0 30px hsl(0, 0%, 90%)",
     border: "4px white solid",
     display: "flex",
     flexDirection: "column"
@@ -37,11 +37,15 @@ const useStyle = makeStyles(theme => ({
     }
   }),
   nameContainer: {
+    fontFamily: "Trebuchet MS",
+    color: "	#DCDCDC",
     textAlign: "center",
     marginTop: '30px',
   },
   profession: {
-    color: "#555",
+    fontFamily: "Trebuchet MS",
+    marginTop: '10px',
+    color: "	#A9A9A9",
     fontWeight: "bold"
   },
 }));

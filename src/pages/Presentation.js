@@ -9,14 +9,12 @@ import Up from '../Components/Arrows/up';
 import Down from '../Components/Arrows/down';
 
 import avatar from '../assets/img/avatar.jpg';
-import bg from '../assets/img/bg.svg';
+import wv from '../assets/img/wv.svg';
 
 const useStyle = makeStyles(theme => ({
   root: {
     height: '100vh',
-    backgroundImage: `url(${bg})`,
-
-    /* background by SVGBackgrounds.com */
+    backgroundImage: `url(${wv})`,
   },
   container: {
     display: "flex",
@@ -63,7 +61,7 @@ export default ({ id }) => {
         <div style={{ opacity: showTitle ? 1 : 0, transition: "all 1s" }}>
 
           <div className={classes.arrow}>
-            <Up to="home" color="black" />
+            <Up to="home" color="white" />
           </div>
 
           <Title title="Presentation" show={showTitle} />
@@ -75,7 +73,7 @@ export default ({ id }) => {
         </div>
 
         <div className={classes.arrow}>
-          <Down to="" color="black" />
+          <Down to="" color="white" />
         </div>
       </Container>
     </div>

@@ -4,13 +4,14 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyle = makeStyles(theme => ({
   title: {
+    fontFamily:"Times New Roman",
     textAlign: "center",
+    color: "white",
+    textShadow: "2px 2px 8px #404040",
     textTransform: "uppercase",
-    letterSpacing: ".15em",
+    letterSpacing: ".13em",
     paddingTop: theme.spacing(1),
-    textRendering: "optimizeLegibility",
-    color: "#2c2c2c",
-    textShadow: "4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2)",
+    textRendering: "optimizeLegibility"
   },  
 }));
 
